@@ -1,0 +1,222 @@
+{
+  "name": "sonic-clos",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-0d9c4a4496e1",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true,
+        "ipam": {
+          "provider": "containerlab"
+        }
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "leaf1": {
+      "index": "0",
+      "shortname": "leaf1",
+      "longname": "clab-sonic-clos-leaf1",
+      "fqdn": "leaf1.sonic-clos.io",
+      "group": "",
+      "labdir": "/workspaces/sonic-clos-fabric-lab/clab-sonic-clos/leaf1",
+      "kind": "sonic-vs",
+      "image": "ghcr.io/netreplica/docker-sonic-vs:20220111",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "209f6d5",
+        "clab-mgmt-net-bridge": "br-0d9c4a4496e1",
+        "clab-node-group": "",
+        "clab-node-kind": "sonic-vs",
+        "clab-node-lab-dir": "/workspaces/sonic-clos-fabric-lab/clab-sonic-clos/leaf1",
+        "clab-node-longname": "clab-sonic-clos-leaf1",
+        "clab-node-name": "leaf1",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/workspaces/sonic-clos-fabric-lab/clos.clab.yml",
+        "containerlab": "sonic-clos"
+      },
+      "port-bindings": [
+      ]
+    },
+    "leaf2": {
+      "index": "1",
+      "shortname": "leaf2",
+      "longname": "clab-sonic-clos-leaf2",
+      "fqdn": "leaf2.sonic-clos.io",
+      "group": "",
+      "labdir": "/workspaces/sonic-clos-fabric-lab/clab-sonic-clos/leaf2",
+      "kind": "sonic-vs",
+      "image": "ghcr.io/netreplica/docker-sonic-vs:20220111",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "209f6d5",
+        "clab-mgmt-net-bridge": "br-0d9c4a4496e1",
+        "clab-node-group": "",
+        "clab-node-kind": "sonic-vs",
+        "clab-node-lab-dir": "/workspaces/sonic-clos-fabric-lab/clab-sonic-clos/leaf2",
+        "clab-node-longname": "clab-sonic-clos-leaf2",
+        "clab-node-name": "leaf2",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/workspaces/sonic-clos-fabric-lab/clos.clab.yml",
+        "containerlab": "sonic-clos"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spine1": {
+      "index": "2",
+      "shortname": "spine1",
+      "longname": "clab-sonic-clos-spine1",
+      "fqdn": "spine1.sonic-clos.io",
+      "group": "",
+      "labdir": "/workspaces/sonic-clos-fabric-lab/clab-sonic-clos/spine1",
+      "kind": "sonic-vs",
+      "image": "ghcr.io/netreplica/docker-sonic-vs:20220111",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "209f6d5",
+        "clab-mgmt-net-bridge": "br-0d9c4a4496e1",
+        "clab-node-group": "",
+        "clab-node-kind": "sonic-vs",
+        "clab-node-lab-dir": "/workspaces/sonic-clos-fabric-lab/clab-sonic-clos/spine1",
+        "clab-node-longname": "clab-sonic-clos-spine1",
+        "clab-node-name": "spine1",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/workspaces/sonic-clos-fabric-lab/clos.clab.yml",
+        "containerlab": "sonic-clos"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spine2": {
+      "index": "3",
+      "shortname": "spine2",
+      "longname": "clab-sonic-clos-spine2",
+      "fqdn": "spine2.sonic-clos.io",
+      "group": "",
+      "labdir": "/workspaces/sonic-clos-fabric-lab/clab-sonic-clos/spine2",
+      "kind": "sonic-vs",
+      "image": "ghcr.io/netreplica/docker-sonic-vs:20220111",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "209f6d5",
+        "clab-mgmt-net-bridge": "br-0d9c4a4496e1",
+        "clab-node-group": "",
+        "clab-node-kind": "sonic-vs",
+        "clab-node-lab-dir": "/workspaces/sonic-clos-fabric-lab/clab-sonic-clos/spine2",
+        "clab-node-longname": "clab-sonic-clos-spine2",
+        "clab-node-name": "spine2",
+        "clab-node-type": "",
+        "clab-owner": "codespace",
+        "clab-topo-file": "/workspaces/sonic-clos-fabric-lab/clos.clab.yml",
+        "containerlab": "sonic-clos"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "leaf1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:02:db:8d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "spine1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:bc:75:a1",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "leaf1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:86:62:5a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "spine2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:56:90:0d",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "leaf2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a8:c8:7d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "spine1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:e3:f0:fc",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "leaf2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:a3:61:11",
+          "peer": "z"
+        },
+        "z": {
+          "node": "spine2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:bc:66:c1",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

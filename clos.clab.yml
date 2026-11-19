@@ -1,0 +1,20 @@
+name: sonic-clos
+topology:
+  nodes:
+    spine1:
+      kind: sonic-vs
+      image: ghcr.io/netreplica/docker-sonic-vs:20220111
+    spine2:
+      kind: sonic-vs
+      image: ghcr.io/netreplica/docker-sonic-vs:20220111
+    leaf1:
+      kind: sonic-vs
+      image: ghcr.io/netreplica/docker-sonic-vs:20220111
+    leaf2:
+      kind: sonic-vs
+      image: ghcr.io/netreplica/docker-sonic-vs:20220111
+  links:
+    - endpoints: ["leaf1:eth1", "spine1:eth1"]
+    - endpoints: ["leaf1:eth2", "spine2:eth1"]
+    - endpoints: ["leaf2:eth1", "spine1:eth2"]
+    - endpoints: ["leaf2:eth2", "spine2:eth2"]
